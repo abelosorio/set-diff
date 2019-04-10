@@ -48,7 +48,7 @@ const generateBulk = (rowsCount, file) => {
 
 _.times(BULKS_TO_GENERATE).forEach((bulkNumber) => {
   const rowsCount = faker.random.number({ min: MIN_ROWS, max: MAX_ROWS })
-  const fileBulk = path.join(__dirname, `bulk-${bulkNumber + 1}.json`)
+  const fileBulk = path.join(__dirname, `bulk-${bulkNumber + 1}.csv`)
 
   console.log(`Generating bulk #${bulkNumber + 1}: ${rowsCount} rows`)
 
